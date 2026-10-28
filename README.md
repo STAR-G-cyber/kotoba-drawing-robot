@@ -1,11 +1,11 @@
 # ことばで描くロボット
 Physical AI 2026 応用編1 最終課題 / OmniCampus: muro-ssm
 
-日本語の短い指示を分類AIで解釈し、ROS 2 と Gazeboの差動二輪ロボットで実行します。「ロボットの顔を描いて」で連続した走行軌跡が顔になります。一部の線をなぞり直します。
+日本語の短い指示を分類AIで解釈し、ROS 2 と Gazeboの差動二輪ロボットで実行します。「ロボットを描いて」で連続した走行軌跡が顔になります。一部の線をなぞり直します。
 
 ## 環境と起動
 動作確認環境: Windows / WSL2・WSLg / Ubuntu 24.04 / ROS 2 Jazzy / Gazebo Harmonic / Python 3。
-ROS 2 Jazzyは[公式手順](https://docs.ros.org/en/jazzy/Installation/Ubuntu-Install-Debs.html)で導入します。ROSのパッケージ取得先設定後、Ubuntuで必要なパッケージを入れます。
+ROS 2 Jazzyは[公式手順](https://docs.ros.org/en/jazzy/Installation/Ubuntu-Install-Debs.html)で導入。ROSのパッケージ取得先設定後、Ubuntuで必要なパッケージを入れます。
 
 ```bash
 sudo apt update
@@ -18,7 +18,7 @@ sudo apt install ros-jazzy-desktop ros-jazzy-ros-gz python3-tk fonts-noto-cjk
 bash start.sh
 ```
 
-Gazeboと操作画面が開きます。外部AI API・APIキー・追加のPythonライブラリは不要です。Linux側で日本語を入力できない場合は例文メニューを選ぶか、Windowsで入力した文章を貼り付けます。
+Gazeboと操作画面が開きます。外部AI API・APIキー・追加のPythonライブラリは不要。Linux側で日本語を入力できない場合は例文メニューを選ぶか、Windowsで入力した文章を貼り付けます。
 
 ## 操作
 - 「前に進んで」「バックして」: 0.5 m移動。
@@ -62,7 +62,7 @@ python3 -m unittest test_motion.py
 - test_motion.py: 回帰テスト
 
 ## 制作・参考
-生成AI（Codex）の支援を受けて実装・修正し、WSL上のGazeboで動作確認しました。
+生成AIの支援を受けて実装・修正し、WSL上のGazeboで動作確認しました。
 - [ROS 2 Jazzy](https://docs.ros.org/en/jazzy/)
 - [Gazebo HarmonicとROS](https://gazebosim.org/docs/harmonic/ros_installation/)
 - [Gazeboの差動二輪制御](https://gazebosim.org/docs/harmonic/moving_robot/)
